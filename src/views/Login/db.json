@@ -1,0 +1,82 @@
+{
+  "getUsers": [
+    {
+      "id": "1",
+      "username": "zys",
+      "password": "1",
+      "role": "admin",
+      "sex": "man"
+    },
+    {
+      "id": "2",
+      "username": "张三",
+      "password": "1",
+      "role": "user",
+      "sex": "woman"
+    },
+    {
+      "id": "3",
+      "username": "李四",
+      "password": "1",
+      "role": "user",
+      "sex": "woman"
+    }
+  ],
+  "getGoods": [
+    {
+      "id": "1",
+      "title": "香蕉",
+      "introduce": "香蕉1"
+    },
+    {
+      "id": "2",
+      "title": "苹果",
+      "introduce": "苹果1"
+    },
+    {
+      "id": "3",
+      "title": "面包",
+      "introduce": "面包1"
+    },
+    {
+      "id": "4",
+      "title": "牛奶",
+      "introduce": "牛奶1"
+    },
+    {
+      "id": "5",
+      "title": "锅巴",
+      "introduce": "锅巴1"
+    },
+    {
+      "id": "6",
+      "title": "柚子",
+      "introduce": "柚子1"
+    },
+    {
+      "id": "7",
+      "title": "橘子",
+      "introduce": "橘子1"
+    },
+    {
+      "id": "8",
+      "title": "火龙果",
+      "introduce": "火龙果1"
+    },
+    {
+      "id": "9",
+      "title": "煎饼",
+      "introduce": "煎饼1"
+    },
+    {
+      "id": "10",
+      "title": "油条",
+      "introduce": "油条1"
+    },
+    {
+      "id": "11",
+      "title": "豆浆",
+      "introduce": "豆浆1"
+    }
+  ]
+}

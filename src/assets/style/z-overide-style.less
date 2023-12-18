@@ -1,0 +1,53 @@
+/**
+ *  样式重写
+ */
+
+// 滚动条
+::-webkit-scrollbar {
+  width: var(--zh-scroll-thumb-width) !important;
+  height: var(--zh-scroll-thumb-width) !important;
+}
+
+// 滚动条滑块
+::-webkit-scrollbar-thumb {
+  background-color: var(--zh-scroll-thumb) !important;
+  border-radius: var(--zh-scroll-thumb-width) !important;
+}
+
+// 滚动条外层轨道
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+
+// 滚动条边角
+::-webkit-scrollbar-corner {
+  //background-color: transparent !important;
+}
+
+// 上下两端按钮
+::-webkit-scrollbar-button {
+  //height: 0 !important;
+}
+
+//火狐滚动条 样式（自定义）
+.mCSB_scrollTools .mCSB_dragger {
+  width: var(--zh-scroll-thumb-width) !important;
+  right: 0 !important;
+}
+
+//滚动条滑块
+.mCSB_dragger_bar {
+  margin: 0 !important;
+  background-color: var(--zh-scroll-thumb) !important;
+}
+
+//滚动条外层轨道
+.mCS-inset.mCSB_scrollTools .mCSB_draggerRail {
+  width: var(--zh-scroll-thumb-width) !important;
+  background-color: transparent !important;
+}
+
+//滚动条最外侧容器
+.mCSB_inside > .mCSB_container {
+  margin-right: var(--zh-scroll-thumb-width) !important;
+}

@@ -1,0 +1,257 @@
+/**
+ *  flex布局
+ */
+.zh-flex {
+    display: flex !important;
+    display: -webkit-flex !important;
+}
+
+.zh-flex-column {
+    .zh-flex;
+    flex-direction: column;
+}
+
+//flex布局 水平 两端对齐
+.zh-flex-space-between {
+    .zh-flex;
+    justify-content: space-between !important;
+}
+
+//flex水平 居中排列
+.zh-flex-center-v {
+    .zh-flex;
+    align-items: center !important;
+}
+
+//flex水平 居中对齐
+.zh-flex-center-h {
+    .zh-flex;
+    justify-content: center !important;
+}
+
+//flex布局水平 垂直居中
+.zh-flex-center {
+    .zh-flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+//flex布局 水平 居右
+.zh-flex-end {
+    .zh-flex;
+    justify-content: flex-end;
+}
+
+//flex布局的子项 weight:1 等分空间
+.zh-mixin-flex-item-weight(@n:1) {
+    flex-grow: @n !important;
+    flex-basis: 0 !important;
+}
+
+//flex布局的子项 weight:1 等分空间
+.zh-flex-item-weight-1 {
+    .zh-mixin-flex-item-weight(1)
+}
+
+//flex布局的子项 weight:2
+.zh-flex-item-weight-2 {
+    .zh-mixin-flex-item-weight(2)
+}
+
+//flex布局的子项 weight:3
+.zh-flex-item-weight-3 {
+    .zh-mixin-flex-item-weight(3)
+}
+
+//flex布局的子项 weight:4
+.zh-flex-item-weight-4 {
+    .zh-mixin-flex-item-weight(4)
+}
+
+//flex布局的子项 weight:5
+.zh-flex-item-weight-5 {
+    .zh-mixin-flex-item-weight(5)
+}
+
+//flex布局的子项 weight:6
+.zh-flex-item-weight-6 {
+    .zh-mixin-flex-item-weight(6)
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////  margin  ///////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+/************************************  margin top ****************************************/
+.zh-margin-top {
+    margin-top: var(--zh-margin) !important;
+}
+
+.zh-margin-top-small {
+    margin-top: var(--zh-margin-small) !important;
+}
+
+.zh-margin-top-big {
+    margin-top: var(--zh-margin-big) !important;
+}
+
+/************************************  margin bottom ****************************************/
+.zh-margin-bottom {
+    margin-bottom: var(--zh-margin) !important;
+}
+
+.zh-margin-bottom-small {
+    margin-bottom: var(--zh-margin-small) !important;
+}
+
+.zh-margin-bottom-big {
+    margin-bottom: var(--zh-margin-big) !important;
+}
+
+/************************************  margin top-bottom ****************************************/
+.zh-margin-top-bottom {
+    margin-top: var(--zh-margin) !important;
+    margin-bottom: var(--zh-margin) !important;
+}
+
+.zh-margin-top-bottom-small {
+    margin-top: var(--zh-margin-small) !important;
+    margin-bottom: var(--zh-margin-small) !important;
+}
+
+.zh-margin-top-bottom-big {
+    margin-top: var(--zh-margin-big) !important;
+    margin-bottom: var(--zh-margin-big) !important;
+}
+
+/************************************  margin left ****************************************/
+.zh-margin-left {
+    margin-left: var(--zh-margin) !important;
+}
+
+.zh-margin-left-small {
+    margin-left: var(--zh-margin-small) !important;
+}
+
+.zh-margin-left-big {
+    margin-left: var(--zh-margin-big) !important;
+}
+
+/************************************  margin right ****************************************/
+.zh-margin-right {
+    margin-right: var(--zh-margin) !important;
+}
+
+.zh-margin-right-small {
+    margin-right: var(--zh-margin-small) !important;
+}
+
+.zh-margin-right-big {
+    margin-right: var(--zh-margin-big) !important;
+}
+
+.zh-margin-left-right {
+    margin-left:  var(--zh-margin) !important;
+    margin-right:  var(--zh-margin) !important;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////  padding  //////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+.zh-padding {
+    padding: var(--zh-margin) !important;
+}
+
+.zh-padding-small {
+    padding: var(--zh-margin-small) !important;
+}
+
+.zh-padding-big {
+    padding: var(--zh-margin-big) !important;
+}
+
+/************************************  padding top ****************************************/
+.zh-padding-top {
+    padding-top: var(--zh-margin) !important;
+}
+
+.zh-padding-top-small {
+    padding-top: var(--zh-margin-small) !important;
+}
+
+.zh-padding-top-big {
+    padding-top: var(--zh-margin-big) !important;
+}
+
+/************************************  padding bottom *************************************/
+.zh-padding-bottom {
+    padding-bottom: var(--zh-margin) !important;
+}
+
+.zh-padding-bottom-small {
+    padding-bottom: var(--zh-margin-small) !important;
+}
+
+.zh-padding-bottom-big {
+    padding-bottom: var(--zh-margin-big) !important;
+}
+
+/************************************  padding top-bottom *********************************/
+.zh-padding-top-bottom {
+    padding-top: var(--zh-margin) !important;
+    padding-bottom: var(--zh-margin) !important;
+}
+
+.zh-padding-top-bottom-small {
+    padding-top: var(--zh-margin-small) !important;
+    padding-bottom: var(--zh-margin-small) !important;
+}
+
+.zh-padding-top-bottom-big {
+    padding-top: var(--zh-margin-big) !important;
+    padding-bottom: var(--zh-margin-big) !important;
+}
+
+/************************************  padding left ***************************************/
+.zh-padding-left {
+    padding-left: var(--zh-margin) !important;
+}
+
+.zh-padding-left-small {
+    padding-left: var(--zh-margin-small) !important;
+}
+
+.zh-padding-left-big {
+    padding-left: var(--zh-margin-big) !important;
+}
+
+/************************************  padding right **************************************/
+.zh-padding-right {
+    padding-right: var(--zh-margin) !important;
+}
+
+.zh-padding-right-small {
+    padding-right: var(--zh-margin-small) !important;
+}
+
+.zh-padding-right-big {
+    padding-right: var(--zh-margin-big) !important;
+}
+
+/************************************  padding left-right *********************************/
+.zh-padding-left-right {
+    padding-left: var(--zh-margin) !important;
+    padding-right: var(--zh-margin) !important;
+}
+
+.zh-padding-left-right-small {
+    padding-left: var(--zh-margin-small) !important;
+    padding-right: var(--zh-margin-small) !important;
+}
+
+.zh-padding-left-right-big {
+    padding-left: var(--zh-margin-big) !important;
+    padding-right: var(--zh-margin-big) !important;
+}
+

@@ -1,0 +1,51 @@
+/**
+ *  全局css变量定义，需要和下半部分的less变量定义的字段值一致
+ */
+
+//---------------------------通用颜色----------------------
+//@zh-bg: #23456D;
+@zh-bg: rgba(35, 69, 109, .9);
+@zh-bg-deep: rgba(35, 69, 109);
+@zh-primary: #409EFF;
+
+//---------------------------字体颜色----------------------
+@zh-text: rgba(255, 255, 255, 0.8);
+@zh-text-deep: #FFFFFF;
+
+//----------------------------尺寸------------------------
+@zh-line-width: 0.1rem;
+@zh-border-radius: 0.3rem;
+
+@zh-margin: 1rem;
+@zh-margin-small: 0.6rem;
+@zh-margin-big: 1.4rem;
+
+//---------------------------滚动条------------------------
+@zh-scroll-thumb: rgba(0, 0, 0, 0.3);
+@zh-scroll-thumb-width: 0.8rem;
+
+
+/**
+ *  less变量对应的css变量,在项目内使用
+ */
+:root {
+    //---------------------------通用颜色----------------------
+    --zh-bg: @zh-bg;
+    --zh-bg-deep: @zh-bg-deep;
+    --zh-primary: @zh-primary;
+
+    //---------------------------字体颜色----------------------
+    --zh-text: @zh-text;
+    --zh-text-deep: @zh-text-deep;
+
+    //----------------------------尺寸------------------------
+    --zh-line-width: @zh-line-width;
+    --zh-border-radius: @zh-border-radius;
+    --zh-margin: @zh-margin;
+    --zh-margin-small: @zh-margin-small;
+    --zh-margin-big: @zh-margin-big;
+
+    //---------------------------滚动条------------------------
+    --zh-scroll-thumb: @zh-scroll-thumb;
+    --zh-scroll-thumb-width: @zh-scroll-thumb-width;
+}
