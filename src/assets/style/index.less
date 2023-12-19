@@ -29,19 +29,32 @@ html, body, #app {
   overflow: hidden !important;
 }
 
+.zh-text-ellipsis(@n:2) {
+  overflow: hidden;
+  -webkit-line-clamp: @n;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
 // 文本省略号，多行
 .zh-text-ellipsis-2 {
-
+  .zh-text-ellipsis(2)
 }
+
 .zh-text-ellipsis-3 {
-
+  .zh-text-ellipsis(3)
 }
+
 .zh-text-ellipsis-4 {
-
+  .zh-text-ellipsis(4)
 }
+
 .zh-text-ellipsis-5 {
-
+  .zh-text-ellipsis(5)
 }
-.zh-text-ellipsis-6 {
 
+.zh-text-ellipsis-6 {
+  .zh-text-ellipsis(6)
 }

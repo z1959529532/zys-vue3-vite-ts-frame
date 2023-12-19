@@ -43,6 +43,9 @@ export function createLoading(props?, target?: HTMLElement, wait = false) {
     }
     return {
         open,
-        close
+        close,
+        setLoading: (loading: boolean) => {
+            data.loading = loading;
+        },
     }
 }

@@ -1,10 +1,12 @@
-import dragDom from './DragDom/DragDom.directive';
 import type {App} from 'vue';
+import dragDom from '@/directives/dragDom/dragDom.directive';
+import loadingDirective from "@/directives/loading/loading.directive";
 
 /**
  * 所有自定义指令
  */
 const directives = {
+    "loading": loadingDirective, // loading指令
     "drag-dom": dragDom, // 拖拽dom
 }
 
