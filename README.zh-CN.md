@@ -66,7 +66,8 @@ yarn create vite | yarn create vite --template vue-ts
 
 [//]: # (@vitejs/plugin-vue-jsx)
 
+<br/>
 
 video.js   
-swiper
+swiper   
 vue-echarts
