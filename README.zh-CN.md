@@ -48,6 +48,7 @@ yarn create vite | yarn create vite --template vue-ts
 | echarts                         | 图表工具：`yarn add echarts -S`                                  |
 | lodash                          | js库工具：`yarn add lodash -S`                                  |
 | postcss-px-to-viewport-8-plugin | 适配工具：`yarn add postcss-px-to-viewport-8-plugin -D`          |
+| unocss                          | 原子化CSS：`yarn add unocss -D`                                   |
 
 [//]: # (- 全局安装json-server)
 
@@ -66,3 +67,6 @@ yarn create vite | yarn create vite --template vue-ts
 [//]: # (@vitejs/plugin-vue-jsx)
 
 
+video.js   
+swiper
+vue-echarts

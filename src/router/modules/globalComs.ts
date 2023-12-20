@@ -6,9 +6,18 @@
  */
 export default [
     {
-        path: 'loading',
-        name: 'loading',
+        path: '/',
+        name: 'layout',
         meta: {},
-        component: () => import('@/views/GlobalComs/Loading/Loading.vue')
+        component: () => import('@/views/GlobalComs/Layout/Layout.vue'),
+        redirect: 'loading',
+        children: [
+            {
+                path: 'loading',
+                name: 'loading',
+                meta: {},
+                component: () => import('@/views/GlobalComs/Loading/Loading.vue')
+            },
+        ]
     },
 ]

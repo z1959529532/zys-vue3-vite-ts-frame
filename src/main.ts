@@ -9,6 +9,8 @@ import router from "@/router";
 import globalComponents from "@/components/index";
 // 所有指令
 import directives from "@/directives/index";
+// UnoCSS
+import 'virtual:uno.css'
 
 // createApp(App).mount('#app')
 const app = createApp(App)

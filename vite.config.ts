@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 // import {fileURLToPath, URL} from 'node:url'
 import {resolve} from "path";
+
 // 自动导入vue相关函数
 import AutoImport from 'unplugin-auto-import/vite';
 // script标签上定义<script setup name="">，使组件带有name属性
@@ -11,6 +12,9 @@ import VueSetupExtend from 'vite-plugin-vue-setup-extend'
 // 按需引入引入UI组件 ant-design-vue
 import {AntDesignVueResolver} from 'unplugin-vue-components/resolvers'
 import Components from 'unplugin-vue-components/vite'
+
+// UnoCSS
+import UnoCSS from 'unocss/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -75,6 +79,7 @@ export default defineConfig({
                 // IconsResolver(),
             ]
         }),
+        UnoCSS(),
     ],
     css: {
         preprocessorOptions: {

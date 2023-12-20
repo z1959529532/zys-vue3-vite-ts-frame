@@ -9,6 +9,9 @@ declare module 'vue' {
   export interface GlobalComponents {
     AButton: typeof import('ant-design-vue/es')['Button']
     ACard: typeof import('ant-design-vue/es')['Card']
+    ALayoutSider: typeof import('ant-design-vue/es')['LayoutSider']
+    AMenu: typeof import('ant-design-vue/es')['Menu']
+    AMenuItem: typeof import('ant-design-vue/es')['MenuItem']
     ASelect: typeof import('ant-design-vue/es')['Select']
     ASpace: typeof import('ant-design-vue/es')['Space']
     ATreeSelect: typeof import('ant-design-vue/es')['TreeSelect']
@@ -19,5 +22,9 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Select: typeof import('./components/Select/Select.vue')['default']
+    SideMenu: typeof import('./components/Menu/SideMenu.vue')['default']
+    UploadOutlined: typeof import('@ant-design/icons-vue')['UploadOutlined']
+    UserOutlined: typeof import('@ant-design/icons-vue')['UserOutlined']
+    VideoCameraOutlined: typeof import('@ant-design/icons-vue')['VideoCameraOutlined']
   }
 }
