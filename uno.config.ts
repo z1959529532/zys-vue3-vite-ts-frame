@@ -11,7 +11,6 @@ export default defineConfig({
         ['zys-flex-center-h', 'flex flex-justify-center'],
         ['zys-flex-center', 'flex flex-justify-center'],
         ['zys-flex-end', 'flex flex-justify-end'],
-        ['', 'flex'],
     ],
     presets: [presetUno(), presetAttributify()]
 })
