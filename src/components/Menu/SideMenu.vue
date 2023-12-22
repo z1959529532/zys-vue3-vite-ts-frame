@@ -1,20 +1,12 @@
 <template>
-  <a-layout-sider width="256px">
-    <div class="logo" />
-    <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
-      <a-menu-item key="1">
-        <user-outlined />
-        <span>nav 1</span>
-      </a-menu-item>
-      <a-menu-item key="2">
-        <video-camera-outlined />
-        <span>nav 2</span>
-      </a-menu-item>
-      <a-menu-item key="3">
-        <upload-outlined />
-        <span>nav 3</span>
-      </a-menu-item>
-    </a-menu>
+  <a-layout-sider class="h-full overflow-x-auto" width="256px" theme="dark">
+    <div class="header h50px zys-flex-center-v">
+      <router-link class="zys-flex-center-v" to="/">
+        <img class="w25px h25px" src="@/assets/images/logo.png">
+        <h1 class="m-l10px">XX系统</h1>
+      </router-link>
+    </div>
+    <div>123</div>
   </a-layout-sider>
 </template>
 
@@ -22,29 +14,57 @@
 import {useRoute, useRouter} from 'vue-router'
 
 /**
- * 侧边栏菜单组件
+ * 页面
  *
  * author zys
- * date 2023/12/20 8:53
+ * date 2023/12/22 16:04
  */
 const router = useRouter()
 const route = useRoute()
 
-const props = defineProps({})
+const props = defineProps({
+  collapsible: {
+    type: Boolean,
+    default: false
+  },
+  collapsed: {
+    type: Boolean,
+    default: false
+  },
+  menuData: {
+    type: Array,
+    default: []
+  },
+  theme: {
+    type: String,
+    default: 'dark'
+  }
+})
 const emit = defineEmits([])
 
-const selectedKeys = ref(['1']);
-
 onMounted(() => {
-
 })
+
+// const sideTheme = computed(() => {
+//   return props.theme == 'light' ? props.theme : 'dark'
+// })
 
 </script>
 
 <style scoped lang="less">
-#SideMenu {
-  width: 100%;
-  height: 100%;
+
+.header {
+  position: relative;
+  -webkit-transition: all .3s;
+  transition: all .3s;
   overflow: hidden;
+
+  &.light {
+    background-color: #fff;
+
+    h1 {
+      color: var(--zh-primary);
+    }
+  }
 }
 </style>

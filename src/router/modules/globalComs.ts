@@ -10,7 +10,7 @@ export default [
         name: 'layout',
         meta: {},
         component: () => import('@/views/GlobalComs/Layout/Layout.vue'),
-        redirect: 'loading',
+        redirect: 'select',
         children: [
             {
                 path: 'loading',
@@ -18,6 +18,12 @@ export default [
                 meta: {},
                 component: () => import('@/views/GlobalComs/Loading/Loading.vue')
             },
+            {
+                path: 'select',
+                name: 'select',
+                meta: {},
+                component: () => import('@/views/GlobalComs/Select/Select.vue')
+            }
         ]
     },
 ]

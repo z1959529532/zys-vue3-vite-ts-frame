@@ -1,7 +1,6 @@
 <template>
   <div id="Layout" flex>
-    <ZysSideMenu>
-    </ZysSideMenu>
+    <ZysSideMenu />
     <RouterView></RouterView>
   </div>
 </template>
@@ -10,7 +9,7 @@
 import {useRoute, useRouter} from 'vue-router'
 
 /**
- * 页面
+ * 主页面
  *
  * author zys
  * date 2023/12/20 9:04
