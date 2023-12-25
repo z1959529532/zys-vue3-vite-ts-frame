@@ -6,7 +6,7 @@ const router = createRouter({
     routes: routes
 });
 
-function resetRoleRoutes() {
+function resetRoutes() {
     const routes = router.getRoutes();
     for (let i = 0; i < routes.length; i++) {
         const routeItem = routes[i];
@@ -16,8 +16,7 @@ function resetRoleRoutes() {
     }
 }
 
-function addRoleRoutes() {
-    resetRoleRoutes()
+function addRoutes() {
     // 根据条件动态添加路由
     const addRoutes = [];
     for (let i = 0; i < routes.length; i++) {

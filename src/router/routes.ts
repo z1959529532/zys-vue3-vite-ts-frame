@@ -24,7 +24,7 @@ const routes: Array<RouteRecordRaw> = [
         meta: {
             title: 'NotFound'
         },
-        component: () => import('@/views/NotFound.vue')
+        component: () => import('@/views/NotFound/NotFound.vue')
     }
 ];
 

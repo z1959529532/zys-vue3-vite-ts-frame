@@ -1,7 +1,7 @@
-<script src="../../../../2.corporation/zjs-student-web/src/router/index.js"></script>
+<script src="../../../../../2.corporation/zjs-student-web/src/router/index.js"></script>
 <template>
   <div id="not-found" class="zh-flex-column zh-flex-center">
-    <img src="@/assets/images/404.png" alt=""/>
+    <img src="../../assets/images/404.png" alt=""/>
     <div class="tip-content">
       <h2>您访问的页面不存在！</h2>
       <p>{{ countdown }}&nbsp;秒后自动跳转到上一页</p>
@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<script setup name="ZysNotFound">
+<script setup lang="ts" name="NotFound">
 import {onMounted} from "vue";
 import {useRoute, useRouter} from 'vue-router'
 import {useIntervalFn} from "@vueuse/core";
@@ -35,7 +35,6 @@ const countdown = ref(5)
 const { pause } = useIntervalFn(() => {
   if (--countdown.value === 0) {
     countdown.value = 5;
-    console.log(route, 3344);
     router.go(-1)
   }
 }, 1000)
