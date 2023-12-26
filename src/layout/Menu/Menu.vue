@@ -4,7 +4,7 @@
           v-model:openKeys="menuInit.openKeys"
           v-model:selectedKeys="menuInit.selectedKeys"
           :mode="isSideMenu ? 'inline' : 'horizontal'"
-          :theme="theme"
+          :theme="theme as MenuTheme"
           :inline-collapsed="props?.collapsed"
           :items="menuData"
           @click="clickMenuItem">

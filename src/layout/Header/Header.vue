@@ -1,9 +1,13 @@
 <template>
-  <a-layout-header :style="headerStyle">
+  <a-layout-header class="zys-flex-between" :style="headerStyle">
     <a-space>
       <span class="menu-fold" @click="changeCollapsed">
         <component :is="collapsed ? MenuUnfoldOutlined : MenuFoldOutlined"/>
       </span>
+    </a-space>
+    <a-space>
+      <FullScreen></FullScreen>
+      <Setting></Setting>
     </a-space>
   </a-layout-header>
 </template>
@@ -11,6 +15,8 @@
 <script setup name="Header" lang="ts">
 import {useRoute, useRouter} from 'vue-router'
 import {MenuFoldOutlined, MenuUnfoldOutlined} from '@ant-design/icons-vue';
+import FullScreen from "@/layout/Header/components/FullScreen/FullScreen.vue";
+import Setting from "@/layout/Header/components/Setting/Setting.vue";
 
 /**
  * header页面
