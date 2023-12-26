@@ -12,18 +12,22 @@ export const allRoutes: Array<RouteRecordRaw> = [...globalComs];
 const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
-        name: 'main',
+        name: 'layout',
         meta: {},
-        component: () => import('@/views/Main/Main.vue'),
+        component: () => import('@/layout/index.vue'),
         redirect: allRoutes[0].path,
         children: allRoutes
     },
     {
+        path: '/main',
+        name: 'main',
+        meta: {},
+        component: () => import('@/views/Main/Main.vue'),
+    },
+    {
         path: '/:pathMatch(.*)*',
         name: 'notFound',
-        meta: {
-            title: 'NotFound'
-        },
+        meta: {},
         component: () => import('@/views/NotFound/NotFound.vue')
     }
 ];

@@ -6,24 +6,39 @@
  */
 export default [
     {
-        path: '/',
-        name: 'layout',
-        meta: {},
-        component: () => import('@/views/GlobalComs/Layout/Layout.vue'),
-        redirect: 'select',
-        children: [
-            {
-                path: 'loading',
-                name: 'loading',
-                meta: {},
-                component: () => import('@/views/GlobalComs/Loading/Loading.vue')
-            },
-            {
-                path: 'select',
-                name: 'select',
-                meta: {},
-                component: () => import('@/views/GlobalComs/Select/Select.vue')
-            }
-        ]
+        path: 'loading',
+        name: 'loading',
+        meta: {
+            isMenu: true,
+            title: '使用loading',
+        },
+        component: () => import('@/views/GlobalComs/Loading/Loading.vue'),
+        // children: [
+        //     {
+        //         path: 'load1',
+        //         name: 'load1',
+        //         meta: {
+        //             isMenu: true,
+        //             title: '使用loading1',
+        //         },
+        //     },
+        //     {
+        //         path: 'load2',
+        //         name: 'load2',
+        //         meta: {
+        //             isMenu: true,
+        //             title: '使用loading2',
+        //         },
+        //     },
+        // ]
+    },
+    {
+        path: 'select',
+        name: 'select',
+        meta: {
+            isMenu: true,
+            title: '使用select',
+        },
+        component: () => import('@/views/GlobalComs/Select/Select.vue')
     },
 ]

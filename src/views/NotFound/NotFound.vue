@@ -1,4 +1,3 @@
-<script src="../../../../../2.corporation/zjs-student-web/src/router/index.js"></script>
 <template>
   <div id="not-found" class="zh-flex-column zh-flex-center">
     <img src="../../assets/images/404.png" alt=""/>

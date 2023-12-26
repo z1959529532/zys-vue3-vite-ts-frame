@@ -2,7 +2,7 @@
   <div id="select">
     <ZysSelect v-model:selectValue="selectInit.value"
                :options="selectInit.options"
-               :fieldNames="{label: 'label', value: 'value'}"></ZysSelect>
+               :fieldNames="{label: 'name', value: 'id'}"></ZysSelect>
   </div>
 </template>
 
@@ -27,18 +27,9 @@ onMounted(() => {
 const selectInit = reactive({
   value: '',
   options: [
-    {
-      value: 'jack',
-      label: 'Jack',
-    },
-    {
-      value: 'lucy',
-      label: 'Lucy',
-    },
-    {
-      value: 'yiminghe',
-      label: 'Yiminghe',
-    },
+    {name: 'jack', id: 'Jack*'},
+    {name: 'lucy', id: 'Lucy*'},
+    {name: 'yiminghe', id: 'Yiminghe*'},
   ]
 })
 
