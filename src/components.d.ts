@@ -19,6 +19,7 @@ declare module 'vue' {
     ASpace: typeof import('ant-design-vue/es')['Space']
     ATooltip: typeof import('ant-design-vue/es')['Tooltip']
     ATreeSelect: typeof import('ant-design-vue/es')['TreeSelect']
+    Button: typeof import('./components/Button/Button.vue')['default']
     Card: typeof import('./components/Card/Card.vue')['default']
     CardList: typeof import('./components/Card/CardList.vue')['default']
     Loading: typeof import('./components/Loading/Loading.vue')['default']

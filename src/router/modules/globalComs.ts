@@ -6,6 +6,24 @@
  */
 export default [
     {
+        path: 'button',
+        name: 'button',
+        meta: {
+            isMenu: true,
+            title: '使用button',
+        },
+        component: () => import('@/views/GlobalComs/Button/Button.vue')
+    },
+    {
+        path: 'select',
+        name: 'select',
+        meta: {
+            isMenu: true,
+            title: '使用select',
+        },
+        component: () => import('@/views/GlobalComs/Select/Select.vue')
+    },
+    {
         path: 'loading',
         name: 'loading',
         meta: {
@@ -31,14 +49,5 @@ export default [
         //         },
         //     },
         // ]
-    },
-    {
-        path: 'select',
-        name: 'select',
-        meta: {
-            isMenu: true,
-            title: '使用select',
-        },
-        component: () => import('@/views/GlobalComs/Select/Select.vue')
     },
 ]
