@@ -38,7 +38,7 @@ const props = defineProps({
   size: {
     type: String as PropType<SizeEnum>,
     default: SizeEnum.LARGE,
-    validator: (v: SizeEnum): boolean => {
+    validator: (v) => {
       return [SizeEnum.DEFAULT, SizeEnum.SMALL, SizeEnum.LARGE].includes(v);
     },
   },

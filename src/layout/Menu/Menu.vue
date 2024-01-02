@@ -6,8 +6,8 @@
           :mode="isSideMenu ? 'inline' : 'horizontal'"
           :theme="theme as MenuTheme"
           :inline-collapsed="props?.collapsed"
-          :items="menuData"
-          @click="clickMenuItem">
+          :items="menuItems"
+          @select="clickMenuItem">
   </a-menu>
 </template>
 
@@ -33,9 +33,10 @@ const isSideMenu = computed(() => {
   // layoutSettingStore.layoutSetting.layout === 'sidemenu'
   return true
 });
-const menuData = computed(() => {
+const menuItems = computed(() => {
   // const menuRoutes = router.getRoutes().filter(val => Object.keys(val.meta).length > 0)
   const menuRoutes = allRoutes.filter(val => Object.keys(val.meta).length > 0)
+  menuInit.selectedKeys = [route?.name]
   return routeConvertMenu(menuRoutes)
 })
 const routeConvertMenu = (routes) => {
@@ -65,14 +66,15 @@ const emit = defineEmits([])
 
 const menuInit = reactive({
   selectedKeys: [],
-  openKeys: []
+  openKeys: [],
 })
 
 onMounted(() => {
 })
 
 const clickMenuItem = ({key}) => {
-  router.push({name: key});
+  menuInit.selectedKeys = [key];
+  router.push(`/${key}`)
 }
 
 </script>

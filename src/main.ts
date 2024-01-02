@@ -11,6 +11,8 @@ import globalComponents from "@/components/index";
 import directives from "@/directives/index";
 // UnoCSS
 import 'virtual:uno.css'
+// 显示本地svg图标
+import 'virtual:svg-icons-register'
 
 // createApp(App).mount('#app')
 const app = createApp(App)

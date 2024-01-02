@@ -10,7 +10,7 @@ export default [
         name: 'button',
         meta: {
             isMenu: true,
-            title: '使用button',
+            title: '使用icon和button',
         },
         component: () => import('@/views/GlobalComs/Button/Button.vue')
     },

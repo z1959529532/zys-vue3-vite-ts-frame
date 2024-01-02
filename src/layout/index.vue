@@ -16,7 +16,7 @@
               :theme="getTheme"
               :topHeight="topHeight"></Header>
       <a-layout-content>
-        <router-view></router-view>
+        <RouterView/>
       </a-layout-content>
     </a-layout>
   </a-layout>

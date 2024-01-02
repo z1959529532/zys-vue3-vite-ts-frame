@@ -8,13 +8,14 @@ import {resolve} from "path";
 import AutoImport from 'unplugin-auto-import/vite';
 // script标签上定义<script setup name="">，使组件带有name属性
 import VueSetupExtend from 'vite-plugin-vue-setup-extend'
-
 // 按需引入引入UI组件 ant-design-vue
 import {AntDesignVueResolver} from 'unplugin-vue-components/resolvers'
 import Components from 'unplugin-vue-components/vite'
 
 // UnoCSS
 import UnoCSS from 'unocss/vite'
+// 显示本地svg图标
+import {createSvgIconsPlugin} from "vite-plugin-svg-icons";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -80,6 +81,10 @@ export default defineConfig({
             ]
         }),
         UnoCSS(),
+        createSvgIconsPlugin({
+            iconDirs: [resolve(process.cwd(), 'src/assets/icons')],
+            symbolId: "icon-[dir]-[name]",
+        }),
     ],
     css: {
         preprocessorOptions: {
