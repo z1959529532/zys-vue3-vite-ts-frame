@@ -74,6 +74,7 @@ onMounted(() => {
 
 const clickMenuItem = ({key}) => {
   menuInit.selectedKeys = [key];
+  console.log(menuInit.selectedKeys);
   router.push(`/${key}`)
 }
 
