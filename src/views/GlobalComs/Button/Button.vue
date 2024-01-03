@@ -48,7 +48,7 @@ const deleteTagById = () => {
     content: 'When clicked the OK button, this dialog will be closed after 1 second',
     onOk() {
       return new Promise((resolve, reject) => {
-        setTimeout(resolve, 1000);
+        setTimeout(resolve, 1500);
       }).catch(() => console.log('Oops errors!'));
     },
   });
