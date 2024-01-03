@@ -29,7 +29,7 @@ defineOptions({
 
 const props = defineProps({
   icon: {
-    type: [Object, String],
+    type: String,
     default: '',
   },
 })

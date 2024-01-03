@@ -12,15 +12,16 @@
     "prettier": "prettier --write"
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
     "@vueuse/core": "^10.7.0",
-    "ant-design-vue": "4.0.6",
+    "ant-design-vue": "^4.0.8",
     "axios": "^1.6.2",
     "echarts": "^5.4.3",
     "lodash": "^4.17.21",
     "mitt": "^3.0.1",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.0",
-    "vue": "^3.3.11",
+    "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {

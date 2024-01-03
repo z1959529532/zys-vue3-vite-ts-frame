@@ -1,6 +1,6 @@
 <template>
-  <template v-if="getIcon">
-    <component :is="getIcon"
+  <template v-if="allAntDesignIcons[props.icon]">
+    <component :is="allAntDesignIcons[props.icon]"
                :class="{'cursor-pointer': isPointer}"
                :style="getSizeStyle"
                :rotate="rotate"
@@ -35,7 +35,7 @@ const props = defineProps({
     default: 'icon',
   },
   icon: {
-    type: [Object, String],
+    type: String,
     default: '',
   },
   isPointer: {
@@ -60,8 +60,6 @@ const props = defineProps({
   },
 })
 const emit = defineEmits([])
-// icon考虑传入是VNode还是字符串，字符串组件库中没有找本地
-const getIcon = computed(() => isVNode(props.icon) ? props.icon : allAntDesignIcons[props.icon])
 // 本地svg图标情况
 const symbolId = computed(() => `#${props.prefix}-${props.icon}`)
 const getSizeStyle = computed(() => {
