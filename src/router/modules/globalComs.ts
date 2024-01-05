@@ -24,6 +24,15 @@ export default [
         component: () => import('@/views/GlobalComs/Select/Select.vue')
     },
     {
+        path: 'tree',
+        name: 'tree',
+        meta: {
+            isMenu: true,
+            title: '使用tree',
+        },
+        component: () => import('@/views/GlobalComs/Tree/Tree.vue')
+    },
+    {
         path: 'loading',
         name: 'loading',
         meta: {
