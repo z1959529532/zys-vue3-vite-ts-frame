@@ -1,25 +1,18 @@
 <template>
-  <!--icon字符串-->
   <ZysIcon icon="PlusOutlined"/>
-  <br>
-  <br>
-  <!--icon字符串，组件库中没有-->
   <ZysIcon icon="export"></ZysIcon>
   <br>
-  <br>
 
-  <!--button字符串-->
   <ZysButton type="primary" icon="PlusOutlined">添加</ZysButton>
-  <br>
-  <br>
-  <!--button字符串，组件库中没有-->
   <ZysButton type="primary" icon="export">导出</ZysButton>
+
+  <ZysButton @click="showConfirm">确认框</ZysButton>
 </template>
 
 <script setup name="Button" lang="ts">
 import {useRoute, useRouter} from 'vue-router'
 import {h} from 'vue';
-import {PlusOutlined, DeleteOutlined} from '@ant-design/icons-vue';
+import {PlusOutlined} from '@ant-design/icons-vue';
 import {Modal} from "ant-design-vue";
 
 /**
@@ -39,17 +32,13 @@ const emit = defineEmits([])
 // })
 
 onMounted(() => {
-  console.log(h(PlusOutlined));
 })
 
-const deleteTagById = () => {
+const showConfirm = () => {
   Modal.confirm({
-    title: 'Do you want to delete these items?',
-    content: 'When clicked the OK button, this dialog will be closed after 1 second',
+    title: '确定？',
+    content: '内容',
     onOk() {
-      return new Promise((resolve, reject) => {
-        setTimeout(resolve, 1500);
-      }).catch(() => console.log('Oops errors!'));
     },
   });
 }
