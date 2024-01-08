@@ -2,9 +2,12 @@
   <ZysIcon icon="PlusOutlined"/>
   <ZysIcon icon="export"></ZysIcon>
   <br>
+  <br>
 
   <ZysButton type="primary" icon="PlusOutlined">添加</ZysButton>
   <ZysButton type="primary" icon="export">导出</ZysButton>
+  <br>
+  <br>
 
   <ZysButton @click="showConfirm">确认框</ZysButton>
 </template>
