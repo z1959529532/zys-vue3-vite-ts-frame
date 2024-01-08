@@ -1,5 +1,6 @@
 <template>
   <div id="select">
+    <div class="title-with-lump" m-l-0.5rem>下拉框</div>
     <ZysSelect v-model:selectValue="selectInit.value"
                :options="selectInit.options"
                :fieldNames="{label: 'name', value: 'id'}"></ZysSelect>
