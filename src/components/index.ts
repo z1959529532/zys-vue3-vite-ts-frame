@@ -16,7 +16,7 @@ const globalComponents = {
     install(app: App) {
         const modules = Object.values(allModule);
         for (const module of modules) {
-            const component: Component = (module as any).default;
+            const component: Component = module.default;
             if (component.name) {
                 app.component(component.name, component);
             }

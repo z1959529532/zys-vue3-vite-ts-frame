@@ -33,6 +33,15 @@ export default [
         component: () => import('@/views/GlobalComs/Tree/Tree.vue')
     },
     {
+        path: 'chart',
+        name: 'chart',
+        meta: {
+            isMenu: true,
+            title: '使用echarts',
+        },
+        component: () => import('@/views/GlobalComs/Chart/Chart.vue')
+    },
+    {
         path: 'loading',
         name: 'loading',
         meta: {

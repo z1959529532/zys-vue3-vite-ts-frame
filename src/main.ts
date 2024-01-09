@@ -21,3 +21,6 @@ app.use(router)
 app.use(globalComponents)
 app.use(directives)
 app.mount('#app');
+
+import echartsFn from '@/components/chart/index'
+app.config.globalProperties.$echartsFn = echartsFn
