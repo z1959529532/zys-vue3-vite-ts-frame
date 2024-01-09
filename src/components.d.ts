@@ -9,7 +9,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     AButton: typeof import('ant-design-vue/es')['Button']
     ACard: typeof import('ant-design-vue/es')['Card']
-    ADirectoryTree: typeof import('ant-design-vue/es')['DirectoryTree']
     ALayout: typeof import('ant-design-vue/es')['Layout']
     ALayoutContent: typeof import('ant-design-vue/es')['LayoutContent']
     ALayoutHeader: typeof import('ant-design-vue/es')['LayoutHeader']
@@ -25,14 +24,10 @@ declare module 'vue' {
     CardList: typeof import('./components/Card/CardList.vue')['default']
     Icon: typeof import('./components/Icon/Icon.vue')['default']
     Loading: typeof import('./components/Loading/Loading.vue')['default']
-    Menu: typeof import('./components/Menu/Menu.vue')['default']
-    MyTree: typeof import('./components/MyTree/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Select: typeof import('./components/Select/Select.vue')['default']
-    SideMenu: typeof import('./components/Menu/SideMenu.vue')['default']
     Tooltip: typeof import('./components/Tooltip/Tooltip.vue')['default']
-    ToolTip: typeof import('./components/ToolTip/ToolTip.vue')['default']
     Tree: typeof import('./components/Tree/Tree.vue')['default']
   }
 }

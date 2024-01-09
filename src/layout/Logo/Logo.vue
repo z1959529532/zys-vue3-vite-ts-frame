@@ -3,7 +3,7 @@
        class="zys-flex-center"
        :style="{'height': `${topHeight}px`}">
     <div class="zys-flex-center-v cursor-pointer" @click="clickLogo">
-      <img class="h32px" src="@/assets/images/logo2.png" alt=""/>
+      <img class="h32px" src="../../assets/images/logo.png" alt=""/>
       <h2 class="ml-8px text-green-600" v-show="!collapsed">ZYS</h2>
     </div>
   </div>

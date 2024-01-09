@@ -29,7 +29,7 @@ const routes: Array<RouteRecordRaw> = [
         name: 'notFound',
         meta: {},
         component: () => import('@/views/NotFound/NotFound.vue')
-    }
+    },
 ];
 
 export default routes

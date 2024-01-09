@@ -63,7 +63,7 @@ const props = defineProps({
     type: Object,
     default: () => {
       /** options-->select  children-->treeSelect */
-      return {label: 'label', value: 'value', options: 'options', children: 'children'}
+      return {label: 'name', value: 'id', options: 'options', children: 'children'}
     }
   },
 })
